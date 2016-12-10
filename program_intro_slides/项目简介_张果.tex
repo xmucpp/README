@@ -142,7 +142,7 @@
 \frametitle{课题目标}
 \begin{itemize}
   \item 第一阶段(2016.2-2016.10)：基于官方CPI编制标准和电商实时价格数据，编制线上高频价格指数
-  \item 第二阶段(2016.11-present)：基于大型活动日和电商微观数据，研究线上市场的产业组织特点
+  \item 第二阶段(2016.11-present)：基于大型活动日的电商微观数据，研究线上市场的产业组织特点
 \end{itemize}
 \end{frame}
 
@@ -175,15 +175,46 @@
 \begin{itemize}
 \item 主题(Topics)
 \begin{itemize}
-  \item Dynamic elasticity estimation and welfare analysis
+  \item Dynamic elasticity estimation 
+  \item Welfare analysis
   \item Reputation dynamics
   \item Search obfuscation
+  \item Platform design
 \end{itemize}
 \item 方法(Methodologies)
 \begin{itemize}
   \item 动态结构模型(Dynamic structural approach)
   \item 离散选择模型(Discrete choice model)
 \end{itemize}
+\end{itemize}
+\end{frame}
+
+\subsection{理论框架}
+\begin{frame}[allowframebreaks]
+\frametitle{理论框架}
+\begin{itemize}
+  \item 消费者：给定价格，测定消费者购买行为的动态变化（测算动态弹性或者需求曲线）
+  \begin{itemize}
+    \item 估计价格和销量的时间序列变化
+    \item 估计价格和销量的关联性
+    \item 建模分析，寻找一个最优停止时间(Optimal Stopping Time)
+    \item 代入参数，做数值模拟，寻找不同参数的特征
+    \item 代入数据做参数估计，与数值模拟的结果对比
+  \end{itemize}
+  \framebreak
+  \item 零售商：给定消费者选择，解出零售商最优定价策略（解均衡）
+  \begin{itemize}
+    \item 基于商品分类和属性做回归分析
+    \item 建模分析，寻找纳什均衡
+    \item 代入数据，估计参数
+  \end{itemize}
+  \item 平台：改变平台政策对平台交易的影响（寻找识别条件）
+  \begin{itemize}
+    \item 改变平台政策，做数值模拟预测
+  \end{itemize}
+  \begin{itemize}
+    \item 
+  \end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -228,6 +259,15 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{重点问题}
+\begin{itemize}
+  \item 可拓展性好：方便扩展不同的爬虫和不同的机器
+  \item 可维护性好：方便长期轮流维护
+  \item 稳定性好：可以长期稳定运行
+\end{itemize}
+\end{frame}
+
+\begin{frame}
 \frametitle{解决方案}
 \begin{itemize}
   \item 分布式反爬+自动化运维系统
@@ -245,9 +285,11 @@
 \begin{frame}[allowframebreaks]
 \frametitle{团队成员}
 \begin{itemize}
-  \item 导师：茅家铭老师\footnotemark
+  \item 导师：茅家铭老师(WISE)\footnotemark
   \footnotetext{\tiny
   \url{http://www.wise.xmu.edu.cn/people/faculty/a81c4142-cb73-4f3f-94b4-2b937d4c1acf.html}}
+  、赵万磊老师(计算机系)\footnotemark  
+  \footnotetext{\url{http://www.cs.xmu.edu.cn/cs/node/297}}
   \item 负责人：张果(14)\footnotemark
   \footnotetext{\tiny \url{https://guo-zhang.github.io/}}
   \item 核心成员：林行健(13)、黄玺(14)、刘晓曼(15)、朱星宇(15)、张祎璘(15)、马宁(16)、唐瀚林(16)
