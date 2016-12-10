@@ -1,0 +1,210 @@
+% !Mode:: "TeX:UTF-8"
+\documentclass{beamer}
+
+\mode<presentation>
+{
+\usetheme{Warsaw}
+
+\setbeamercovered{transparent}
+}
+
+\usepackage[UTF8]{ctex} % 支持中文
+
+% 分页Slide不编号
+\setbeamertemplate{frametitle continuation}{}
+
+% 插入多列
+\usepackage{multicol}
+
+% 插入链接
+\usepackage{hyperref}
+\hypersetup{urlcolor=blue}
+
+% 插入图片
+\usepackage{graphicx}
+
+% 插入代码
+\usepackage{xcolor}
+\definecolor{mygray}{RGB}{245,245,245}
+
+\usepackage{listings}
+\lstset{language=Python}
+\lstset{escapeinside=``}
+\lstset{numbers=left}
+\lstset{breaklines}
+\lstset{backgroundcolor=\color{mygray}}
+
+% 书签乱码解决方案
+% 在文件D:/CTEX/MiKTeX/tex/latex/beamer/base/beamer.cls中找到:
+% \PassOptionsToPackage{bookmarks=true,%
+%   bookmarksopen=true,%
+%   pdfborder={0 0 0},%
+%   pdfhighlight={/N},%
+%   unicode=true,%       <-------------- 加入此行
+%   linkbordercolor={.5 .5 .5}}{hyperref}
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+\begin{frame}<beamer>
+\frametitle{目录}
+\begin{multicols}{2}
+\tableofcontents[currentsection,currentsubsection]
+\end{multicols}
+\end{frame}
+}
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command:
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+
+\title{项目简介-文献组}
+\subtitle{双十一资料整理}
+
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+%\author{F.~Author\inst{1} \and S.~Another\inst{2}}
+\author{庄建伟}
+
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+\institute[Universities of]
+{
+厦门大学\quad 经济学院}
+
+\renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
+\date{\today}
+
+% This is only inserted into the PDF information catalog. Can be left
+% out.
+\subject{Presentations}
+
+% title page
+\begin{frame}
+\titlepage
+\end{frame}
+
+% content
+\begin{frame}
+\frametitle{目录}
+\begin{multicols}
+\tableofcontents
+\end{multicols}
+% You might wish to add the option [pausesections]
+\end{frame}
+
+\section{简介\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\begin{frame}\huge
+\begin{center}
+为项目组收集资料
+\end{center}
+\end{frame}
+% 张果
+
+
+\section{零售商（刘晓曼, 庄建伟）}
+% 刘晓曼, 庄建伟
+\begin{frame}
+商家的策略：
+\begin{itemize}
+\item 商家的各种活动,例如：万店同庆、价格竞猜、集猫活动、店铺优惠券等
+\item 商家的各种Cheating，例如：超低价商品（秒杀商品）、刷单、先涨价再降价等
+\end{itemize}
+\end{frame}
+\begin{frame}
+Cheating:超低价（秒杀价）产品骗局
+\begin{itemize}
+\item[1.] 套取买家真实的个人信息
+\item[2.] 获得大量的交易记录
+\item[3.] 与快递公司业务员合谋——获得侥幸收益
+\item[4.] 骗款利息收益
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\section{消费者（郝泽栋）\ \ \ \ \ \ \ \ \ \ }
+% 郝泽栋
+\begin{frame}
+双十一对消费者的影响：
+\begin{itemize}
+  \item 思路：爬取知乎等网站上相关的文本数据，对所得文本进行处理。
+  %\item 处理方法：1. 分词；2. 词频统计；3. 分词性词频统计；4. 情感分析。
+  \item 上周进度：抓取了知乎上四个排名靠前的与双十一相关的问题的一些高票回答，对这些答案进行了词频统计。
+\end{itemize}
+\end{frame}
+
+
+
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+
+  \item 目前的结果：由于未进行词性标注处理，且样本较小，目前所得的高频率词汇基本没什么意义，其中甚至包含“分割线”这样的词。
+  \item \begin{center}
+  \includegraphics[width=4cm,height=4cm]{Sample.png}
+\end{center}
+  \item 下一步工作：抓取更大容量的样本；处理过程中加入词性标注，分词性进行词频统计，进一步观察结果。
+\end{itemize}
+\end{frame}
+
+
+\section{平台（张伟贤）\ \ \ \ \ \ \ \ \ \ \ \ \ }
+% 张伟贤
+\begin{frame}
+\begin{center}
+\includegraphics[width=6cm,height=6cm]{2016101151914761723428584.jpg}
+\end{center}
+\begin{itemize}
+\item 网购的消费潜力巨大，但增速有所放缓（2016，1027亿）
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+值得关注的地方：
+\begin{itemize}
+\item 线下服务平台，线上线下的结合
+\item 娱乐化、社交化成为一种趋势（如：直播、晚会等）
+\item 移动端消费占比超八成
+\item 主流品牌战胜低质低价产品
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+ 物流：
+\begin{itemize}
+\item 大型自动化流水线和智能机器人提高了商品拣选、打\ \ \ 包和出库的效率——在网点停留时间减少
+\item 预测网点拥堵情况提前准备，自动分配最优快递员
+\item 各电商应对措施：苏宁-苏宁云仓、京东-无人送货车、\ \ \ \ \ \ \ \ 菜鸟-快递员APP、其他-机器自动分拣
+\end{itemize}
+\end{frame}
+
+
+\section{小结\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+% 张果
+\subsection{}
+
+
+\begin{frame}
+\begin{center}
+  \includegraphics[width=5cm,height=5cm]{CPP.jpg}
+\end{center}
+\end{frame}
+
+\end{document}
