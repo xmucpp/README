@@ -22,7 +22,7 @@
 
 % 插入图片
 \usepackage{graphicx}
- 
+
 % 插入代码
 \usepackage{xcolor}
 \definecolor{mygray}{RGB}{245,245,245}
@@ -54,15 +54,6 @@
 
 % Delete this, if you do not want the table of contents to pop up at
 % the beginning of each subsection:
-\AtBeginSubsection[]
-{
-\begin{frame}<beamer>
-\frametitle{目录}
-\begin{multicols}{2}
-\tableofcontents%[currentsection,currentsubsection]
-\end{multicols}
-\end{frame}
-}
 
 % If you wish to uncover everything in a step-wise fashion, uncomment
 % the following command:
@@ -107,12 +98,12 @@
 \end{frame}
 
 \section{通用爬虫设计}
-\subsection{爬虫主要流程：请求，解析，储存}
 
+\subsection{爬虫主要流程}
 \begin{frame}
 \frametitle{请求}
 \begin{itemize}
-  \item 判断静态还是动态页面。\\ 方法：审查元素（查看源代码）看我们所需的信息是否出现。
+  \item 判断静态还是动态页面。\\方法：审查元素（查看源代码）看我们所需的信息是否出现。
   \item 库的选择：通常请求用requests库。
   \item 具体请求方式：get或者post(视具体情况而定)
 \end{itemize}
@@ -129,36 +120,39 @@
 \begin{frame}
 \frametitle{储存}
 \begin{itemize}
-   \item 储存格式：csv或者json 
-   \item 库的选择：Python的csv模块
+   \item 储存格式：csv或者json
+   \item 库的选择：python的csv模块
 \end{itemize}
 \end{frame}
 
 \section{爬虫实例：JD评论爬虫}
-\subsection{静态爬虫：以京东的产品价格为例}
+
+\subsection{静态爬虫}
 \begin{frame}
 \frametitle{步骤}
 \begin{enumerate}
   \item 判断出它是静态内容
-  \item 利用requests库请求html
+  \item 利用requests库请求html.
   \begin{itemize}
   	\item 反爬
   	\item 具体症状：返回的html错误或者出现403等报错数字
-  	\item
-  	原因：一般，浏览器在向服务器发送请求的时候，会有一个请求头——User-Agent，它用来标识浏览器的类型.当我们使用requests来发送请求的时候，默认的User-Agent是python-requests/2.**。
-    \item 反爬策略：修改User-Agent如修改为'Mozilla/5.0 (Macintosh; Intel Mac OS X
-    10\_11\_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+  	\item 原因：一般，浏览器在向服务器发送请求的时候，会有一个请求头——User-Agent，它用来标识浏览器的类型.当我们使用requests来发送请求的时候，默认的User-Agent是python-requests/2.**。
+    \item 反爬策略：修改User-Agent，如修改为
+    \begin{listings}
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_11\_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    \end{listings}
   \end{itemize}
   \item 请求下正常的html之后，用BeautifulSoup进行解析。
 \end{enumerate}
 \end{frame}
 
-\subsection{动态爬虫：以京东的商品评论为例}
+\subsection{动态爬虫}
 \begin{frame}
+\frametitle{概述}
 难点：
 \begin{itemize}
   \item 如何获取url
-  \item 如何请求数据
+  \item 如何请求html(requests的使用)
   \item 如何处理返回的html
 \end{itemize}
 \end{frame}
@@ -167,60 +161,59 @@
 \frametitle{步骤}
 \begin{enumerate}
   \item 审查元素(建议使用谷歌浏览器)\\注意：刷新，浏览整个页面\\观察内容：一般在xhr或者js中，获取正确的url
-  \item 获取内容 \\ 使用库:requests \\ 具体方法：
+  \item 获取内容\\使用库:requests\\具体方法：
   \begin{itemize}
-  	\item 观察headers，决定使用get或post以及对应的请求头\\（一般来讲，其中我们需要关注的是Cookie / Host / Origin
-  	/ Referer / User-Agent / X-Requested-With等参数。）
+  	\item 观察headers，决定使用get或post以及对应的请求头\\（一般来讲，其中我们需要关注的是Cookie / Host / Origin / Referer / User-Agent / X-Requested-With等参数。）
   	\item 好消息是，这样的请求往往得到的内容是json格式的，所以我们非但不会加重爬虫的任务，反而可能会省去解析HTML的功夫。
   	\item 运用json库将其封装成字典
   \end{itemize}
-  
 \end{enumerate}
 接下来我们就可以利用对python的list和dict的操作来获取我们想要的信息
 \end{frame}
 
 \subsection{常见问题}
 \begin{frame}
+\frametitle{常见问题}
 \begin{enumerate}
   \item 获取html时出现错误\\解决方案：观察headers\\判断是否是反爬（print出来状态码）解决方法：修改请求头
-  \item 解析html的坑：
+  \item 解析html的坑：\\
   \begin{itemize}
   	\item 返回的不是正常的json格式\\方法：import re 用正则表达式洗字符串
   	\item 编码错误\\查看编码：观察headers或print出来\\方法：转化成unicode.
   	\end{itemize}
-  	
+  	}
 \end{enumerate}
 解决了这些问题，我们就应该能顺利地写出一篇单面爬虫了，那么如何翻页呢？
 \end{frame}
 
-\subsection{翻页策略：构造url}
 \begin{frame}
+\frametitle{翻页策略}
 \begin{enumerate}
   \item 观察url，修改其中的参数来重新运行观察有什么效果
   \item 找到最大面数，然后利用字符串格式化来修改url\\用迭代的方法写成循环。
   \item 观察运行效果
 \end{enumerate}
-\end{frame}
 
-\subsection{常见错误}
 \begin{frame}
+\frametitle{常见错误}
 \begin{enumerate}
   \item 返回的是空list现在猜测原因是正则表达式的问题)
   \item 编码错误（解决思路：从一开始请求时就将其转化为unicode）
-  \item{ValueError}
+  \item ValueError
 \end{enumerate}
 \end{frame}
 
-\subsection{解决新思路}
+
 \begin{frame}
+\frametitle{解决新思路}
 \end{frame}
 
-\subsection{爬虫的修改}
 \begin{frame}
+\frametitle{爬虫的修改}
 \begin{enumerate}
-  \item{函数式编程}
-  \item{循环的写法}
-  \item{报错处理}
+  \item 函数式编程
+  \item 循环的写法
+  \item 报错处理
 \end{enumerate}
 \end{frame}
 
