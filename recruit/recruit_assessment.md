@@ -3,14 +3,14 @@
 ## Requirement
 
 ### Goal
-- 采集豆瓣读书某一分类（比如经济学）的数据（2+X）
+- 采集豆瓣读书某一分类（比如经济学）的数据（3+X）
 - 对数据做简单描述和简单回归、并做可视化（4+X）
-- 对结果进行表达，包括专栏文章和Presentation（4+X）
+- 对结果进行表达，包括专栏文章和Presentation（3+X）
 
 ### Step
 - 数据采集：豆瓣读书（如经济学板块）：https://book.douban.com/tag/经济学
   - 建议数据条目：ID、书名、出版日期、评分（重要）、评价人数（重要）、纸质版价格（重要）等。
-      - 基础数据条目：2分
+      - 基础数据条目：3分
       - 额外数据条目+合理使用：1分（附加分）
   - 待选数据条目：各个网站纸质版价格
       - 豆瓣网站列举的价格：2分（附加分）
@@ -25,8 +25,9 @@
   - 其他：前面几点的扩展，或者其他方面，每个1分（附加分）
 
 - 表达结果：
-  - 专栏文章：数据来源、采集策略、预处理、描述性统计、简单回归（2分）
-  - Presentation：LaTeX+beamer制作slides，组会Pre（2分）
+  - Github：上传到项目GitHub Organization（1分）
+  - 专栏文章：数据来源、采集策略、预处理、描述性统计、简单回归（1分）
+  - Presentation：LaTeX+beamer制作slides，组会Pre（1分）
   - 其他：某一点特别突出或者有其他加分项，1分（附加分）
 
 ## Tools
@@ -68,9 +69,13 @@
 
 ### 爬虫
 
-- Python爬虫入门：
+- Python爬虫入门
   - https://xlzd.me/tag/crawler/
   - https://zhuanlan.zhihu.com/p/21511857
+
+- 豆瓣爬虫实例
+  - 
+  - https://github.com/lanbing510/DouBanSpider/blob/master/doubanSpider.py
 
 - HTML、CSS、JS等
   - http://www.w3school.com.cn
