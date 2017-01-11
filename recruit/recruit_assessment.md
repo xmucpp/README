@@ -74,7 +74,7 @@
   - https://zhuanlan.zhihu.com/p/21511857
 
 - 豆瓣爬虫实例
-  - 
+  - https://www.zhihu.com/question/21234530
   - https://github.com/lanbing510/DouBanSpider/blob/master/doubanSpider.py
 
 - HTML、CSS、JS等
@@ -87,7 +87,6 @@
   - https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/
 
 ### 数据分析
-
 - pandas：http://pandas.pydata.org/pandas-docs/version/0.19.0/
   - Quick Start: http://pandas.pydata.org/pandas-docs/version/0.19.0/10min.html
   - Data Structure: http://pandas.pydata.org/pandas-docs/version/0.19.0/dsintro.html
@@ -96,11 +95,11 @@
   - IO: http://pandas.pydata.org/pandas-docs/version/0.19.0/io.html
   - Visualization: http://pandas.pydata.org/pandas-docs/version/0.19.0/visualization.html
 
-### LaTex
+- statsmodels: http://statsmodels.sourceforge.net
 
+### LaTeX
 - 入门
   - https://zhuanlan.zhihu.com/p/21511857
-
 - beamer
   - https://en.wikipedia.org/wiki/Beamer_(LaTeX)
 
