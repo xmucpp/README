@@ -1,4 +1,4 @@
-# Recruit Assessment
+# Recruit Assessment for Core Group
 
 ## Requirement
 
@@ -31,7 +31,7 @@
   - 其他：某一点特别突出或者有其他加分项，1分（附加分）
 
 ## Tools
-- Python2.7.x（9以上）
+- Python2.7.x（2.7.9以上）
 - LaTeX
 
 ### Timing
