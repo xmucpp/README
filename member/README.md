@@ -42,7 +42,7 @@
 
 
 ### Technology Group
-- Hanlin Tang: Captain, 爬虫系统管理
+- Hanlin Tang: Captain of Technology, 爬虫系统管理
 - Xingjian Lin: 分布式工程师、爬虫工程师
 - Xi Huang: 数据库工程师
 - Li Liu: 数据库（暂）
@@ -52,8 +52,8 @@
 
 
 ### Data Group
-- Tian Xie: Captain, NLP
-- Yilin Zhang: Vice Captain, 算法工程师
+- Tian Xie: Captain of Data, NLP
+- Yilin Zhang: Captain of Mining, 算法工程师
 - Weiran Li: OCR工程师
 - Xin Lv: 可视化工程师
 - Yunfeng Zhou
@@ -61,9 +61,9 @@
 - 缺：数据分析工程师
 
 
-### Web Group
+### Media Group
 
-- Xingyu Zhu: Captain
+- Xingyu Zhu: Captain of Media
 - Hao Jiang: 前端工程师
 - Yilun Lin: 微信平台主管
 - 缺：文案
@@ -72,7 +72,7 @@
 
 ### Literature Group
 
-- Zedong Hao: Captain
+- Zedong Hao: Captain of Literature
 - Xiaoman Liu
 - Jianwei Zhuang
 
