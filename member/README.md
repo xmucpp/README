@@ -79,9 +79,9 @@
 
 ### Others
 
-- Xueyang Du: Captain of Translations
-- Li Liu: Captain of Human Resources
-- Yidi Qu: Captain of Finance
+- Xueyang Du: Translator
+- Li Liu: Human Resource Manager
+- Yidi Qu: Treasurer
 
 
 ## Global Team
