@@ -1,4 +1,4 @@
-# Team Introduction for China's Prices Project at Xiamen University
+# Team Introduction for China's Prices Project
 
 ## Tutors
 
