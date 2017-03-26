@@ -29,10 +29,7 @@
 ## Who are we looking for? （我们希望寻找什么样的人？）
 
 We are seeking for peers who has strong willingness and great pontential of improvement to be the top in their field of interest, including research, coding, design, operation, finance, legal, management, etc. We hope to find excellent peers with quality as follows:
--
--
--
-- etc.
+
 
 
 我们希望寻找有强烈意愿和有很大的进步潜力的在他们感兴趣的领域做到顶尖的同龄伙伴，包括但不限于研究、编程、设计、运营、财务、法务、管理等方面。我们希望可以找到有如下的品质的队友：
