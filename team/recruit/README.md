@@ -10,16 +10,18 @@
 
 我们项目目前已经取得的成果包括：
 <!--审核和揣摩一下用词-->
-- 厦大最大的本科生课题组；
-- 厦大最大的数据服务团队，已经和正在厦大十几位老师提供数据方面的助研服务，比如傅馨老师、廖谋华老师、龙小宁老师、游家兴老师（按拼音排序）等；
+- 厦大最大、同时也是分布最广的本科生课题组，课题组二十几名成员横跨本部及翔安校区经济统计计算机等专业；
+- 厦大经验最丰富的数据服务团队，已经并且正在为厦大数十位老师提供数据方面的助研服务，与我们合作（过）的老师有傅馨老师、廖谋华老师、龙小宁老师、蒙莉娜老师、王璐航老师，游家兴老师等（按拼音排序）；
 <!--@吕昕补充一下老师名单-->
-- 厦大最大的Python团队；
-- 参与QuantEcon.py的讨论和开发工作；
+- 厦大与老师合作最多，并为广大学生提供各类助研机会的平台；
+- 厦门大学最大的Python团队，团队已在知乎专栏上发表多篇基于python的爬虫、数据挖掘等教程；
+- 与2011年诺贝尔经济学奖得主Tom Sargent教授合作，参与其团队QuantEcon.py的讨论和开发工作；
 - 等等。
 
 
+
 项目负责人目前已经取得的成果包括：
-- Sargent教授（2011年诺贝尔经济学奖得主）助研；
+- Tom Sargent教授（2011年诺贝尔经济学奖得主）助研；
 - Python中文社区合伙人、专栏作者；
 - 等等。
 
@@ -28,9 +30,7 @@
 
 ## Who are we looking for? （我们希望寻找什么样的人？）
 
-We are seeking for peers who has strong willingness and great pontential of improvement to be the top in their field of interest, including research, coding, design, operation, finance, legal, management, etc. We hope to find excellent peers with quality as follows:
-
-
+<!--We are seeking for peers who has strong willingness and great pontential of improvement to be the top in their field of interest, including research, coding, design, operation, finance, legal, management, etc. We hope to find excellent peers with quality as follows:-->
 
 我们希望寻找有强烈意愿和有很大的进步潜力的在他们感兴趣的领域做到顶尖的同龄伙伴，包括但不限于研究、编程、设计、运营、财务、法务、管理等方面。我们希望可以找到有如下的品质的队友：
 
@@ -54,11 +54,31 @@ We are seeking for peers who has strong willingness and great pontential of impr
 - 专职：仅负责或者参与某一方面；
 - 兼职：短期加入某一项目。
 
+而对于课题组内目前已经较稳定分工的小组，我们有如下一些要求：
 
-欢迎加入正处在高速成长期的我们！
+** 数据组（数据分析向/文本分析向））**
+- 有一定的数学/统计学基础
+- 熟练使用一种软件或语言，python为最优
+- 有过数据分析和数据挖掘的知识及应用
+
+** 技术组（数据库向/系统向）**
+- 至少掌握一门编程语言
+- 对计算机网络，数据库有一定了解，了解linux
+
+** 宣传组 **
+- 熟练微信公众号运营及排版
+- 有过优秀宣传文案经历
+- 或：了解网站组织架构，熟悉网页内容排版
 
 
 
 
 ## How to join us?
 
+我们衷心欢迎校内校外同学发送简历到邮箱xietiancpp@163.com，标明“cpp+方向（数据组/技术组/宣传组）”。
+
+对于还没有成熟项目经历的同学，我们建议写上个人陈述，提供数学/统计相关课程成绩。
+
+然后我们将根据个人意向发送相应考核题，根据考核表现确定最终进组机会。
+
+** 欢迎加入正处在高速成长期的我们！**
