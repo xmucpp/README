@@ -146,7 +146,7 @@
 
 - statsmodels: http://statsmodels.sourceforge.net
 
-### 情感分析相关
+### 文本分析
 - 简要概述：https://zhuanlan.zhihu.com/p/25065579?utm_source=itdadao&utm_medium=referral
 - 利用gensim与sklearn文本搭建分类器：http://blog.csdn.net/u014595019/article/details/52433754
 - 我爱自然语言处理网: http://www.52nlp.cn/
