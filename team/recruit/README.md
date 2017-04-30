@@ -108,7 +108,7 @@
 
 ## How to join us?
 
-我们衷心欢迎**校内外同学(非QE组向)**发送**简历+个人陈述+课程成绩**到邮箱liuxiaoman@163.com，标明“cpp+方向（数据组/技术组/法务组/财务组）”；
+我们衷心欢迎**校内外同学(非QE组向)**发送**简历+个人陈述+课程成绩**到邮箱liuxiaomancpp@163.com，标明“cpp+方向（数据组/技术组/法务组/财务组）”；
 
 **意向QE组的同学**请发送简历(包括CV+Cover Letter)到邮箱liujiachengcpp@163.com, 标明“cpp+QE组”；
 
