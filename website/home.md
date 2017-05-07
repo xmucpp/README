@@ -69,3 +69,6 @@ China's Prices Project是一个以互联网平台为土壤、大数据技术为�
   - ... 
 
 ## 联系我们
+- 合作：i@xmucpp.com
+- 服务：service@xmupp.com
+- 招募：hr@xmucpp.com
