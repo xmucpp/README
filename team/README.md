@@ -15,6 +15,7 @@
 - Co-Founder: Xiaoman Liu, Yilin Zhang
 - Co-Partner & Global Leader: Jiacheng Liu
 - Executive Principal: Yuyang Li, Xueyang Du
+- Technology Principal: Hanlin Tang
 
 ## Research Department
 
